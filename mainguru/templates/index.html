@@ -1,0 +1,386 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная | GuruIT</title>
+    <script src="https://kit.fontawesome.com/4885b8d773.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/libs.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/svg" href="{% static 'img/logo/165191.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="top_nav">
+        <div class="container">
+            <div class="left_nav">
+                <!-- <span><i class="fas fa-map-marker-alt"></i></span>-->
+                </div> 
+            <div class="right_nav"><span><i class="fas fa-paper-plane"></i>guruitcompany@gmail.com</span><span><i class="fas fa-mobile-alt" type='tel'></i><a href="tel:+996990930555">+996-990-930-555</a></span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="menu d-flex justify-content-between align-items-center"><a class="logo" href="{% url 'home' %}"><img src="{% static 'img/icons/logo_vio.svg' %}">GuruIT</a>
+            <div class="menu__icon"><span></span><span></span><span></span><span></span></div>
+            <div class="menu__links">
+                <ul>
+                    <li class="active"><a class="menu__links-item" href="{% url 'home' %}">Главная</a></li>
+                    <li><a class="menu__links-item" href="{% url 'portfolio' %}">Портфолио</a></li>
+                    <li class="down_nav"><a class="menu__links-item" href="#">Блог</a>
+                        <ul>
+                            <li><a href="./blog/two_cols.html">Two Column</a></li>
+                            <li><a href="./blog/single_post_image.html">Single Post Image</a></li>
+                            <li><a href="./blog/single_post_video.html">Single Post Video</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="menu__links-item" href="{% url 'about' %}">О нас</a></li>
+                    <li><a class="menu__links-item" href="{% url 'contact' %}">Контакты</a></li>
+                    <div class="button small line">
+                        <nav id="contact">
+                            <li><a href="#contacts">Связаться с нами</a></li>
+                        </nav>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header class="slider_head"><span class="element_two"><img src="{% static 'img/cub_two.png' %}" alt=""></span><span class="element_three"><img src="{% static 'img/cub_three.png' %}" alt=""></span><span class="element_four"><img src="{% static 'img/cub_four.png' %}" alt=""></span><span class="element_five"><img src="{% static 'img/block_five.png' %}" alt=""></span>
+        <span
+            class="element_six"><img src="{% static 'img/cub_six.png' %}" alt=""></span><span class="element_seven"><img src="{% static 'img/cub_seven.png' %}" alt=""></span><span class="element_eight"><img src="{% static 'img/cub_eight.png' %}" alt=""></span><span class="element_nine"><img src="{% static 'img/cub_four.png' %}" alt=""></span>
+            <div class="icon">
+                <div class="row flex-column align-items-center justify-content-center h-100"><a href="tel:+996990930555"><i class="fa fa-phone" aria-hidden="true"></i></a><a href="https://www.instagram.com/guruit.studio/"><i class="fab fa-instagram"></i></a><a href="https://t.me/Aitodev"><i class="class fab fa-telegram"></i></a><a href="https:wa.me/+996990930555"><i class="fab fa-whatsapp"></i></a></div>
+            </div>
+            <div class="container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper head_slider">
+                        <div class="swiper-slide">
+                            <div class="tit_img"><img src="{% static 'img/content-image-1.png' %}" src-plh="https://via.placeholder.com/500x500"></div>
+                            <div class="title">
+                                <div class="box">
+                                    <h1>Креативная студия разработки Guru IT это:</h1>
+                                </div>
+                                <p>1) Разработка креативных решений для работы бизнеса в онлайн.</p>
+                                
+                                
+                                <div class="button">
+                                    <nav id="menu">
+                                        <li><a href="#products">Почему GuruIT?</a></li>
+                                    </nav></div>
+                                </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tit_img"><img src="{% static 'img/featured-image-5.png' %}" src-plh="https://via.placeholder.com/500x500"></div>
+                            <div class="title">
+                                <div class="box">
+                                    <h1>Креативная студия разработки Guru IT это:</h1>
+                                </div>
+                                <p>2) Индивидуальный подход к каждому клиенту</p> 
+                                <div class="button"><a href="">Как мы работаем?</a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tit_img"><img src="{% static 'img/slide03_l.png' %}" src-plh="https://via.placeholder.com/500x500"></div>
+                            <div class="title">
+                                <div class="box">
+                                    <h1>Креативная студия разработки Guru IT это:</h1>
+                                </div>
+                                <p>3) Надежность и соблюдение всех сроков </p>
+                                <div class="button"><a href="">Почему GuruIT?</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+    </header>
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="0">
+                    <div class="numb"><span><img src="{% static 'img/icons/icon_01.svg' %}"></span>
+                        <h3>Исследуем</h3>
+                        <p>Проводим исследование в области вашего бизнеса и предлагаем решения</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="numb"><span><img src="{% static 'img/icons/icon_02.svg' %}"></span>
+                        <h3>Составляем ТЗ </h3>
+                        <p>Обсуждаем ваше и наше видение проекта и составляем техническое задание</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="numb"><span><img src="{% static 'img/icons/icon_03.svg' %}"></span>
+                        <h3>Составляем договор </h3>
+                        <p>Прописываем все условия нашего сотрудничества</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="welcome_b">
+        <div class="welcome row">
+            <div class="img_b col-lg-6 p-0"><img src="{% static 'img/img02_l.jpg' %}" src-plh="https://via.placeholder.com/1920x1080"></div>
+            <div class="bg col-lg-6">
+                <div class="cont_inf">
+                    <h2>О нас</h2>
+                    <p>Мы предлагаем только лучшее: правильную скоростную архитектуру сайта, доскональную SEO оптимизацию, таргетинг на регион, уникальный дизайн. Вы можете также заказать эффективный сайт для Вашего бизнеса по специализированной уникальной тематике. </p>
+                    <div class="button"><a href="">Как мы работаем?</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products" id="products"><span class="element_ten"><img src="{% static 'img/icons/cub_ten.svg' %}" alt=""></span><span class="element_eleven"><img src="{% static 'img/icons/cub_eleven.svg' %}" alt=""></span><span class="element_twelve"><img src="{% static 'img/icons/cub_twelve.svg' %}" alt=""></span>
+        <div class="container">
+            <div class="row">
+                <div class="title_b col-sm-12 col-12">
+                    <h2>Наши услуги</h2>
+                    <p>Мы работаем для того, чтобы у вас росла прибыль.Качетсвенно и отвественно подходим к каждому проекту</p>
+                </div>
+                <div class="row">
+                    <div class="pr col-lg-4 col-md-8 col-12" data-aos="fade-up" data-aos-duration="0">
+                        {% for s in services %}
+                        <div class="product_bl"><img src="{% static 'img/block_one_l.png' %}" alt="">
+                            <div class="product_cont">
+                                <h3>{{ s.namemain }}</h3>
+                                <p>{{ s.description }}</p>
+                                <span>{{ s.price }}<sup><small>руб</small></sup></span>
+                                <div class="button"><a href="#contacts">Выбрать</a></div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work">
+        <div class="container">
+            <div class="title_b col-lg-12 col-md-12 p-0">
+                <h2>Наши работы</h2>
+                <p>Лучше всего о качестве наших услуг говорит портфолио </p>
+            </div>
+            <div class="wrk">
+                <div class="img_wr"><img src="{% static 'img/img03_l.jpg' %}" src-plh="https://via.placeholder.com/500x500"></div>
+                <div class="name_wr">
+                    <h3>Лучший проект</h3><span>Закат 3D</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. Iaculis at erat pellentesque adipiscing.
+                        Iaculis at erat pellentesque adipiscing commodo elit at. Et</p>
+                    <div class="icon i_two col-lg-4 col-md-12">
+                        <div class="row align-items-center"><a href=""><i class="fab fa-facebook-f"></i></a><a href=""><i class="fab fa-instagram"></i></a><a href=""><i class="fab fa-telegram"></i></a><a href=""></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="img_w">
+                <div class="row">
+                    <div class="img_portf">
+                        <a data-fancybox="gallery" href="{% static 'img/img10_l.png' %}">
+                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="{% static 'img/img10_l.png' %}"></a>
+                    </div>
+                    <div class="img_portf">
+                        <a data-fancybox="gallery" href="{% static 'img/img06_l.jpg' %}">
+                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="{% static 'img/img06_l.jpg' %}"></a>
+                    </div>
+                    <div class="img_portf">
+                        <a data-fancybox="gallery" href="{% static 'img/img09_l.jpg' %}">
+                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="{% static 'img/img09_l.jpg' %}"></a>
+                    </div>
+                    <div class="img_portf">
+                        <a data-fancybox="gallery" href="{% static 'img/img08_l.jpg' %}">
+                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="{% static 'img/img08_l.jpg' %}"></a>
+                    </div>
+                    <div class="img_portf">
+                        <a data-fancybox="gallery" href="{% static 'img/img05_l.jpg' %}">
+                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="{% static 'img/img05_l.jpg' %}"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="process">
+        <div class="container">
+            <div class="title_b">
+                <h2>Алгоритм сотрудничества</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="row process_c">
+                <div class="process_b sq_on col-lg-4 col-md-4 col-12"><span class="square_one">1</span>
+                    <div class="b_brc" data-aos="fade-up" data-aos-duration="0">
+                        <h4>Цель</h4>
+                        <p>Формируем главную цель проекта</p>
+                    </div>
+                </div>
+                <div class="process_b sq_tw col-lg-4 col-md-4 col-12"><span class="square_two">2</span>
+                    <div class="b_brc" data-aos="fade-up" data-aos-duration="1000">
+                        <h4>Составляем ТЗ</h4>
+                        <p>В техническом задании указываем каким должен быть проект</p>
+                    </div>
+                </div>
+                <div class="process_b pr_b sq_th col-lg-4 col-md-4 col-12"><span class="square_three">3</span>
+                    <div class="b_brc" data-aos="fade-up" data-aos-duration="2000">
+                        <h4>Реализация</h4>
+                        <p>Перевоплащаем тз в код</p>
+                    </div>
+                </div>
+                <div class="process_b sq_fo col-lg-4 col-md-4 col-12"><span class="square_four">4</span>
+                    <div class="b_brc" data-aos="fade-up" data-aos-duration="0">
+                        <h4>Презентуем работу</h4>
+                        <p>Демонстрируем проделанную работу</p>
+                    </div>
+                </div>
+                <div class="process_b sq_fv col-lg-4 col-md-4 col-12"><span class="square_five">5</span>
+                    <div class="b_brc" data-aos="fade-up" data-aos-duration="1000">
+                        <h4>Отзыв</h4>
+                        <p>Получаем ваш отзыв, корректируем детали</p>
+                    </div>
+                </div>
+                <div class="process_b sq_s col-lg-4 col-md-4 col-12"><span class="square_six">6</span>
+                    <div class="b_brc" data-aos="fade-up" data-aos-duration="2000">
+                        <h4>Счастливый клиент</h4>
+                        <p>После выполения всех пунктов получем счастливого клиента</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <div class="row">
+                <div class="team_t col-lg-3">
+                    <h2>Наша команда</h2>
+                </div>
+                <div class="team_t col-lg-9">
+                    <p>Опытные разработчикики, которые реализовали множество коммерческих проектов и имеют слаженность в командной работе. Ответсвенность и креативный подход делают наш коллектив лучшим в своем деле.</p>
+                </div>
+            </div>
+            <div class="bg_team col-lg-12">
+                <div class="row justify-content-between">
+                    {% for t in teams %}
+                    <div class="face_team col-lg-3 col-md-3 p-0">
+                        <div class="img_team"><img src="{{ t.img.url }}" alt="">
+                            <div class="social"><a href="{{ t.phone }}"><i class="fa fa-phone"></i></a><a href="{{ t.instagram }}"><i class="fab fa-instagram"></i></a><a href="{{ t.mail }} "><i class="fa fa-envelope"></i></a></div>
+                        </div>
+                        <h4>{{ t.name }}</h4><span>{{ t.status }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <div class="title_b">
+                <h2>Блог</h2>
+                <p>Интересные темы it индустрии,советы, успехи и драгоценный опыт вы можете читать и узнавать в блоге GuruIT!</p>
+            </div>
+            <div class="posts_s three_cols col-lg-12">
+                <div class="row">
+                    <div class="posts_standart">
+                        <a href="single_post_image.html">
+                            <div class="post_img"><img src="{% static 'img/blog_one_l.png' %}"></div>
+                        </a>
+                        <div class="wrp_post">
+                            <div class="category"><span>Blog</span><span>Construction</span><span>Painting</span></div>
+                            <a href="single_post_image.html">
+                                <h2>Best office in town</h2>
+                            </a>
+                            <p>Velit indoctum assentior duo at. Ea eos doming inermis apeirian, in mel oratio populo aliquip. Vix ipsum graece corrumpit ne, eum an nonumy aliquip, periculis scribentur disputationi sed ne.</p>
+                            <div class="bottom_inf">
+                                <div class="left_inf"><span>John Doe</span></div>
+                                <div class="right_inf"><span>14.07.2019</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts_standart">
+                        <a href="single_post_image.html">
+                            <div class="post_img"><img src="{% static 'img/blog_two_l.png' %}"></div>
+                        </a>
+                        <div class="wrp_post">
+                            <div class="category"><span>Blog</span><span>Construction</span><span>Painting</span></div>
+                            <a href="single_post_image.html">
+                                <h2>Why design is needed</h2>
+                            </a>
+                            <p>Velit indoctum assentior duo at. Ea eos doming inermis apeirian, in mel oratio populo aliquip. Vix ipsum graece corrumpit ne, eum an nonumy aliquip, periculis scribentur disputationi sed ne.</p>
+                            <div class="bottom_inf">
+                                <div class="left_inf"><span>John Doe</span></div>
+                                <div class="right_inf"><span>14.07.2019</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts_standart">
+                        <a href="single_post_image.html">
+                            <div class="post_img"><img src="{% static 'img/blog_three_l.png' %}"></div>
+                        </a>
+                        <div class="wrp_post">
+                            <div class="category"><span>Blog</span><span>Construction</span><span>Painting</span></div>
+                            <a href="single_post_image.html">
+                                <h2>Business Courses</h2>
+                            </a>
+                            <p>Velit indoctum assentior duo at. Ea eos doming inermis apeirian, in mel oratio populo aliquip. Vix ipsum graece corrumpit ne, eum an nonumy aliquip, periculis scribentur disputationi sed ne.</p>
+                            <div class="bottom_inf">
+                                <div class="left_inf"><span>John Doe</span></div>
+                                <div class="right_inf"><span>14.07.2019</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form_b" id="contacts">
+        <div class="container">
+            <div class="form_contact">
+                <h2>Обратная связь</h2>
+                <p> Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время!</p>
+                <form action="{% url 'applications' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="rpl_b">
+                        <input type="text" name="name" placeholder="Имя">
+                        <input type="text" name="mail" placeholder="Номер телефона">
+                    </div>
+                    <textarea name="comment" placeholder="Комментарий"></textarea>
+                    <p>
+                    </p>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="brend">
+                <div class="logo"><img src="{% static 'img/icons/logo_vio.svg' %}">GuruIT</div>
+                <p>Номер телефона : <a href="tel:+996990930555">+996990930555</a></p>
+                <p>Номер телефона : <a href="tel:+998933353877">+998933353877</a></p>
+                <p>Почтовый адресс : <a href="mailto:guruitcompany@gmail.com?subject=Хочу%20сайт">guruitcompany@gmail.com</a></p>
+            </div>
+            <div class="nav_f col-lg-12 col-12"><span>Все права защищены © Copyright © 2020 GuruIT</span></div>
+        </div>
+    </footer>
+</body>
+    <script type="text/javascript">
+     $(document).ready(function(){
+        $("#menu").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1400);
+        });
+    });
+    </script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+        $("#contact").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1700);
+        });
+    });
+    </script>
+    <script src="{% static 'js/libs.min.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+</html>
